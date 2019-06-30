@@ -1,12 +1,12 @@
 [colors]
-;background = ${xrdb:color0:#222}
-background = #222
+background = ${xrdb:color0}
+;background = #222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
+foreground = #fff
 foreground-alt = #555
-primary = #3F51B5
-secondary = #e60053
+primary = ${xrdb:color1}
+secondary = ${xrdb:color2}
 alert = #bd2c40
 
 [bar/example]

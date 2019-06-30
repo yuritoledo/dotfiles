@@ -200,14 +200,16 @@ exec_always --no-startup-id feh --bg-scale $HOME/Pictures/wallpaper/wallpaper.jp
 exec_always --no-startup-id wal -i $HOME/Pictures/wallpaper/wallpaper.jpg
 exec_always --no-startup-id compton -f
 
-
+set_from_resource $fg i3wm.color1
+set_from_resource $bg i3wm.color2
+set_from_resource $ac i3wm.color3
 # colors
-client.focused          #3F51B5 #3F51B5 #ffffff #FDF6E3
-client.focused_inactive #080808 #080808 #ffffff #454948
-client.unfocused        #080808 #080808 #ffffff #454948
-client.urgent           #CB4B16 #FDF6E3 #ffffff #268BD2
-client.placeholder      #080808 #080808 #ffffff #080808 
-client.background       #2B2C2B
+# client.focused          #3F51B5 #3F51B5 #ffffff #FDF6E3
+# client.focused_inactive #080808 #080808 #ffffff #454948
+# client.unfocused        #080808 #080808 #ffffff #454948
+# client.urgent           #CB4B16 #FDF6E3 #ffffff #268BD2
+# client.placeholder      #080808 #080808 #ffffff #080808 
+# client.background       #2B2C2B
 
 
 # i3 gaps
