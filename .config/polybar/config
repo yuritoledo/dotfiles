@@ -33,10 +33,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Roboto:pixelsize=12;weight=bold;1
-# font-0 = IBM Plex Sans Text:pixelsize=11.25;weight=bold;1
+font-0 = Roboto:style=Bold:pixelsize=12;1
+# font-0 = IBM Plex Sans:pixelsize=12;weight=bold;1
 font-1= unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=12;1"
 
 modules-left = i3 xwindow
 modules-center = 
@@ -140,7 +143,7 @@ label-song-ellipsis = true
 type = internal/xbacklight
 
 format = <label>
-label = BL %percentage%%
+label =   %percentage%%
 
 
 [module/wlan]
@@ -185,7 +188,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = %d %A 
+date = %A, %d
 
 time = %H:%M
 
@@ -193,14 +196,14 @@ format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 # format-underline = #0a6cf5
 
-label = %date%   %time%
+label =   %date%     %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 # format-volume = <label-volume> <bar-volume>
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted

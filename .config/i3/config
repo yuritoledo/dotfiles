@@ -10,7 +10,7 @@
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
-font pango:monospace 10
+font pango:DejaVu Sans Mono 10
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -190,6 +190,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-scale $HOME/Pictures/wallpaper/wallpaper.jpg
 exec_always --no-startup-id wal -i $HOME/Pictures/wallpaper/wallpaper.jpg
 exec_always --no-startup-id compton -f
+exec_always --no-startup-id parcellite
 
 set_from_resource $fg i3wm.color1
 set_from_resource $bg i3wm.color2
