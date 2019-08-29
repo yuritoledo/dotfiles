@@ -8,6 +8,7 @@ font pango:DejaVu Sans Mono 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+
 # keys
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+e exec nemo
@@ -21,7 +22,7 @@ bindsym $mod+w kill
 for_window [urgent=latest] focus
  
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border none
+default_border 1pixel
 default_floating_border none
 
 bindsym $mod+Left focus left
@@ -131,10 +132,16 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/init.sh
+exec_always --no-startup-id exec feh --bg-fill $HOME/Pictures/wallpaper/wallpaper.png
 exec_always --no-startup-id compton --config $HOME/.config/compton.conf
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id parcellite
 exec_always --no-startup-id dunst 
+exec_always albert
+
+
+# install xrandr comption, parcellite, dunst, playerctl, xbacklight, albert, feh
 
 # colors
 client.focused          #d31919 #ffffff #ffffff #FDF6E3
@@ -146,7 +153,7 @@ client.background       #2B2C2B
 
 
 # i3 gaps
-gaps inner 8
-gaps outer 5
+gaps inner 10
+gaps outer 0
 smart_borders on
-focus_follows_mouse on
+focus_follows_mouse no
